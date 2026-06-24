@@ -34,9 +34,12 @@ const Catalog = ({ open, onClose }: CatalogProps) => {
             На главную
           </button>
 
-          <div className="font-display text-xl font-bold uppercase tracking-[0.2em]">
-            <span className="text-gradient-accent">Aurum</span>
-            <span className="text-foreground/90"> Motors</span>
+          <div className="flex items-center gap-2 font-display text-xl font-extrabold uppercase tracking-tight">
+            <span className="flex items-center gap-1">
+              <span className="block h-5 w-1.5 skew-x-[-20deg] bg-accent2" />
+              <span className="block h-5 w-1.5 skew-x-[-20deg] bg-accent2" />
+            </span>
+            <span className="text-foreground">China-Zone</span>
           </div>
 
           <button className="relative text-foreground/80 transition-colors hover:text-accent2">

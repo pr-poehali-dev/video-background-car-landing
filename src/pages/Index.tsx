@@ -44,7 +44,7 @@ const Index = () => {
       </div>
 
       {/* Шапка */}
-      <header className="absolute inset-x-0 top-0 z-20 animate-fade-in opacity-0" style={{ animationDelay: '6.8s' }}>
+      <header className="absolute inset-x-0 top-0 z-20 animate-fade-in opacity-0" style={{ animationDelay: '4.7s' }}>
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 md:px-10">
           <div className="flex items-center gap-2 font-display text-xl font-extrabold uppercase tracking-tight">
             <span className="flex items-center gap-1">
@@ -90,14 +90,14 @@ const Index = () => {
       <section className="relative z-10 flex h-full flex-col items-center justify-center px-6 text-center">
         <span
           className="mb-6 animate-fade-up font-display text-xs uppercase tracking-[0.4em] text-accent2 opacity-0"
-          style={{ animationDelay: '7.2s' }}
+          style={{ animationDelay: '5.1s' }}
         >
           Коллекция 2026
         </span>
 
         <h1
           className="animate-title-reveal font-display text-4xl font-extrabold uppercase leading-[1.05] tracking-tight text-foreground opacity-0 sm:text-5xl md:text-6xl lg:text-7xl"
-          style={{ animationDelay: '7s' }}
+          style={{ animationDelay: '4.9s' }}
         >
           Запчасти и аксессуары
           <br />
@@ -106,7 +106,7 @@ const Index = () => {
 
         <p
           className="mt-6 max-w-md animate-fade-up text-sm font-light leading-relaxed text-foreground/55 opacity-0"
-          style={{ animationDelay: '7.5s' }}
+          style={{ animationDelay: '5.4s' }}
         >
           Эксклюзивные автомобили для тех, кто ценит безупречность в каждой детали
         </p>
@@ -114,7 +114,7 @@ const Index = () => {
         <button
           onClick={() => setCatalogOpen(true)}
           className="group mt-10 flex animate-fade-up items-center gap-3 bg-accent2 px-9 py-4 font-display text-xs font-semibold uppercase tracking-[0.2em] text-black opacity-0 transition-all duration-300 hover:bg-foreground"
-          style={{ animationDelay: '7.8s' }}
+          style={{ animationDelay: '5.7s' }}
         >
           Каталог товаров
           <Icon name="ArrowRight" size={16} className="transition-transform duration-300 group-hover:translate-x-1" />

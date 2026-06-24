@@ -27,19 +27,20 @@ const Index = () => {
         catalogOpen ? '-translate-x-1/4' : 'translate-x-0'
       }`}
     >
-      {/* Фон: Exeed China-Zone */}
+      {/* Видеофон */}
       <div className="absolute inset-0 z-0">
-        <img
-          src="https://cdn.poehali.dev/projects/5eb8108d-ac51-4f62-a8ba-0fdd7f278728/bucket/eb80e536-6dd3-4f69-b678-c9a40b5ec1d8.png"
-          alt=""
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
           className="h-full w-full object-cover"
-        />
-        {/* Свечение фар — пульсирующее */}
-        <div className="pointer-events-none absolute left-[26%] top-[43%] h-24 w-72 -translate-x-1/2 -translate-y-1/2 animate-headlight-glow rounded-full bg-[radial-gradient(ellipse_at_center,rgba(220,235,255,0.85),transparent_70%)] blur-2xl" />
-        <div className="pointer-events-none absolute left-[74%] top-[43%] h-24 w-72 -translate-x-1/2 -translate-y-1/2 animate-headlight-glow rounded-full bg-[radial-gradient(ellipse_at_center,rgba(220,235,255,0.85),transparent_70%)] blur-2xl" />
+        >
+          <source src="https://maxlabweb.ru/stock1.mp4" type="video/mp4" />
+        </video>
         {/* Затемнение — почти чёрный фон */}
-        <div className="absolute inset-0 bg-black/35" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/85" />
+        <div className="absolute inset-0 bg-black/55" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/20 to-black/85" />
       </div>
 
       {/* Шапка */}
@@ -91,7 +92,7 @@ const Index = () => {
           className="mb-6 animate-fade-up font-display text-xs uppercase tracking-[0.4em] text-accent2 opacity-0"
           style={{ animationDelay: '5.1s' }}
         >
-          Коллекция 2026
+          Доставка по РФ
         </span>
 
         <h1

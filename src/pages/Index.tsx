@@ -1,4 +1,6 @@
+import { useState } from 'react';
 import Icon from '@/components/ui/icon';
+import Catalog from '@/components/Catalog';
 
 const navItems = [
   { label: 'Главная', href: '#' },
@@ -14,8 +16,15 @@ const socials = [
 ];
 
 const Index = () => {
+  const [catalogOpen, setCatalogOpen] = useState(false);
+
   return (
-    <main className="relative h-screen w-screen overflow-hidden bg-background">
+    <>
+    <main
+      className={`relative h-screen w-screen overflow-hidden bg-background transition-transform duration-700 ease-[cubic-bezier(0.76,0,0.24,1)] ${
+        catalogOpen ? '-translate-x-1/4' : 'translate-x-0'
+      }`}
+    >
       {/* Фон: машина в фас */}
       <div className="absolute inset-0 z-0">
         {/* Тёмная база — фары выключены (Exeed VX) */}
@@ -101,6 +110,7 @@ const Index = () => {
         </p>
 
         <button
+          onClick={() => setCatalogOpen(true)}
           className="group mt-10 flex animate-fade-up items-center gap-3 bg-accent2 px-9 py-4 font-display text-xs font-semibold uppercase tracking-[0.2em] text-black opacity-0 transition-all duration-300 hover:bg-foreground"
           style={{ animationDelay: '4s' }}
         >
@@ -109,6 +119,9 @@ const Index = () => {
         </button>
       </section>
     </main>
+
+    <Catalog open={catalogOpen} onClose={() => setCatalogOpen(false)} />
+    </>
   );
 };
 

@@ -25,23 +25,20 @@ const Index = () => {
         catalogOpen ? '-translate-x-1/4' : 'translate-x-0'
       }`}
     >
-      {/* Фон: машина в фас */}
+      {/* Видеофон */}
       <div className="absolute inset-0 z-0">
-        {/* Тёмная база — фары выключены (Exeed VX) */}
-        <img
-          src="https://cdn.poehali.dev/projects/5eb8108d-ac51-4f62-a8ba-0fdd7f278728/files/746618a2-cc20-4dda-a09c-44edb75b139a.jpg"
-          alt=""
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
           className="h-full w-full object-cover"
-        />
-        {/* Включённые белые фары — проявляются через 3 сек и горят постоянно */}
-        <img
-          src="https://cdn.poehali.dev/projects/5eb8108d-ac51-4f62-a8ba-0fdd7f278728/files/13cfd477-6a7b-451c-a21a-ab4684fbd585.jpg"
-          alt=""
-          className="absolute inset-0 h-full w-full animate-headlights-on object-cover opacity-0"
-        />
+        >
+          <source src="https://maxlabweb.ru/stock1.mp4" type="video/mp4" />
+        </video>
         {/* Затемнение — почти чёрный фон */}
-        <div className="absolute inset-0 bg-black/65" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/30 to-black/90" />
+        <div className="absolute inset-0 bg-black/55" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/20 to-black/85" />
       </div>
 
       {/* Шапка */}

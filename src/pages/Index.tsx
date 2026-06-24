@@ -99,9 +99,9 @@ const Index = () => {
           className="animate-title-reveal font-display text-4xl font-extrabold uppercase leading-[1.05] tracking-tight text-foreground opacity-0 sm:text-5xl md:text-6xl lg:text-7xl"
           style={{ animationDelay: '7s' }}
         >
-          Искусство
+          Запчасти и аксессуары
           <br />
-          <span className="text-gradient-accent">движения</span>
+          <span className="text-gradient-accent">для китайских авто</span>
         </h1>
 
         <p

@@ -117,6 +117,10 @@ export default {
 				'preloader-out': {
 					'0%': { opacity: '1' },
 					'100%': { opacity: '0' }
+				},
+				'headlight-glow': {
+					'0%, 100%': { opacity: '0.45' },
+					'50%': { opacity: '0.9' }
 				}
 			},
 			animation: {
@@ -128,7 +132,8 @@ export default {
 				'fade-in': 'fade-in 1.2s ease-out forwards',
 				'slide-bars': 'slide-bars 0.7s cubic-bezier(0.22,1,0.36,1) forwards',
 				'letter-in': 'letter-in 0.5s cubic-bezier(0.22,1,0.36,1) forwards',
-				'preloader-out': 'preloader-out 0.8s ease-out forwards'
+				'preloader-out': 'preloader-out 0.8s ease-out forwards',
+				'headlight-glow': 'headlight-glow 2.8s ease-in-out infinite'
 			}
 		}
 	},

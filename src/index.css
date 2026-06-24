@@ -4,11 +4,11 @@
 
 @layer base {
   :root {
-    --background: 0 0% 4%;
-    --foreground: 40 30% 92%;
+    --background: 0 0% 3%;
+    --foreground: 0 0% 96%;
 
-    --gold: 43 65% 55%;
-    --gold-soft: 43 50% 70%;
+    --accent2: 22 95% 54%;
+    --accent2-soft: 30 95% 60%;
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -105,18 +105,18 @@
 }
 
 @layer utilities {
-  .text-gradient-gold {
-    background: linear-gradient(180deg, hsl(43 70% 78%), hsl(43 60% 48%));
+  .text-gradient-accent {
+    background: linear-gradient(100deg, hsl(30 95% 60%), hsl(16 95% 50%));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .nav-link {
-    @apply relative text-sm tracking-[0.15em] uppercase text-foreground/70 transition-colors duration-300 hover:text-gold;
+    @apply relative text-xs tracking-[0.18em] uppercase text-foreground/60 transition-colors duration-300 hover:text-foreground;
   }
   .nav-link::after {
     content: "";
-    @apply absolute -bottom-1 left-0 h-px w-0 bg-gold transition-all duration-300;
+    @apply absolute -bottom-1 left-0 h-px w-0 bg-accent2 transition-all duration-300;
   }
   .nav-link:hover::after {
     @apply w-full;

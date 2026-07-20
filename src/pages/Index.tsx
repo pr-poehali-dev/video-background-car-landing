@@ -37,13 +37,13 @@ const Index = () => {
           className="h-full w-full object-cover"
         >
           <source
-            src="https://cdn.poehali.dev/projects/5eb8108d-ac51-4f62-a8ba-0fdd7f278728/bucket/1abf57e0-e45c-41e0-9c30-b76339f543b7.webm"
-            type="video/webm"
+            src="https://cdn.poehali.dev/projects/5eb8108d-ac51-4f62-a8ba-0fdd7f278728/bucket/79cf6238-8d40-4b84-ae29-a4509d33cb40.mp4"
+            type="video/mp4"
           />
         </video>
-        {/* Затемнение — чтобы читался текст */}
-        <div className="absolute inset-0 bg-black/45" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/10 to-black/75" />
+        {/* Затемнение — видео светлое, затемняем сильнее */}
+        <div className="absolute inset-0 bg-black/65" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black/90" />
       </div>
 
       {/* Шапка */}

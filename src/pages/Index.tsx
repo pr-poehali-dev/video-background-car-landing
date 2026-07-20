@@ -36,11 +36,14 @@ const Index = () => {
           playsInline
           className="h-full w-full object-cover"
         >
-          <source src="https://maxlabweb.ru/stock1.mp4" type="video/mp4" />
+          <source
+            src="https://cdn.poehali.dev/projects/5eb8108d-ac51-4f62-a8ba-0fdd7f278728/bucket/1abf57e0-e45c-41e0-9c30-b76339f543b7.webm"
+            type="video/webm"
+          />
         </video>
-        {/* Затемнение — почти чёрный фон */}
-        <div className="absolute inset-0 bg-black/55" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/20 to-black/85" />
+        {/* Затемнение — чтобы читался текст */}
+        <div className="absolute inset-0 bg-black/45" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/10 to-black/75" />
       </div>
 
       {/* Шапка */}

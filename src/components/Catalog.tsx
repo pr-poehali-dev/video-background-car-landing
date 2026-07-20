@@ -134,34 +134,34 @@ const Catalog = ({ open, onClose }: CatalogProps) => {
 
         {/* Уровень: товары */}
         {products ? (
-          <div className="grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-4 xl:grid-cols-5">
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 md:gap-6 lg:grid-cols-4">
             {products.map((p) => (
               <div
                 key={p.id}
-                className="group flex flex-col overflow-hidden rounded-2xl border border-foreground/10 bg-gradient-to-b from-white/[0.04] to-transparent shadow-[0_10px_40px_-15px_rgba(0,0,0,0.8)] transition-all duration-300 hover:-translate-y-1 hover:border-accent2/40"
+                className="group mx-auto flex min-h-[500px] w-full max-w-[300px] flex-col overflow-hidden rounded-2xl border border-foreground/10 bg-gradient-to-b from-white/[0.04] to-transparent shadow-[0_10px_40px_-15px_rgba(0,0,0,0.8)] transition-all duration-300 hover:-translate-y-1 hover:border-accent2/40"
               >
-                <div className="relative aspect-square overflow-hidden bg-black/40">
+                <div className="relative aspect-[4/3] overflow-hidden bg-black/40">
                   <img
                     src={p.image}
                     alt={p.name}
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
-                <div className="flex flex-1 flex-col p-4">
-                  <h3 className="mb-2 min-h-[2.5rem] text-sm font-medium leading-snug text-foreground/90">
+                <div className="flex flex-1 flex-col p-5">
+                  <h3 className="mb-3 min-h-[3rem] text-base font-medium leading-snug text-foreground/90">
                     {p.name}
                   </h3>
                   <div className="mt-auto">
-                    <div className="mb-3 font-display text-lg font-extrabold text-foreground">
+                    <div className="mb-4 font-display text-2xl font-extrabold text-foreground">
                       {p.price.toLocaleString('ru-RU')} ₽
                     </div>
                     <div className="flex gap-2">
-                      <button className="flex flex-1 items-center justify-center gap-2 bg-accent2 py-2.5 font-display text-[11px] font-semibold uppercase tracking-[0.12em] text-black transition-colors hover:bg-foreground">
-                        <Icon name="ShoppingCart" size={14} />
+                      <button className="flex flex-1 items-center justify-center gap-2 bg-accent2 py-3 font-display text-xs font-semibold uppercase tracking-[0.12em] text-black transition-colors hover:bg-foreground">
+                        <Icon name="ShoppingCart" size={15} />
                         В корзину
                       </button>
-                      <button className="flex items-center justify-center border border-foreground/15 px-3 text-foreground/70 transition-colors hover:border-accent2/60 hover:text-accent2">
-                        <Icon name="Info" size={16} />
+                      <button className="flex items-center justify-center border border-foreground/15 px-3.5 text-foreground/70 transition-colors hover:border-accent2/60 hover:text-accent2">
+                        <Icon name="Info" size={17} />
                       </button>
                     </div>
                   </div>

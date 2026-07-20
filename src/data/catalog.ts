@@ -2,11 +2,11 @@ export const CAR_CROSSOVER = 'https://cdn.poehali.dev/projects/5eb8108d-ac51-4f6
 export const CAR_SEDAN = 'https://cdn.poehali.dev/projects/5eb8108d-ac51-4f62-a8ba-0fdd7f278728/files/59a6906b-8cb5-4da7-8fad-e5d8d39ff2db.jpg';
 export const CAR_OFFROAD = 'https://cdn.poehali.dev/projects/5eb8108d-ac51-4f62-a8ba-0fdd7f278728/files/b2cdea5e-96ea-4196-99f7-b8fbc9ea3d6e.jpg';
 
-const P_BRAKES = 'https://cdn.poehali.dev/projects/5eb8108d-ac51-4f62-a8ba-0fdd7f278728/files/74922c79-e04a-4b25-ab1b-0a6a18fdb12a.jpg';
-const P_WHEEL = 'https://cdn.poehali.dev/projects/5eb8108d-ac51-4f62-a8ba-0fdd7f278728/files/c720cf1a-8ef0-4c38-ae4e-97e8bd9de82a.jpg';
-const P_LIGHT = 'https://cdn.poehali.dev/projects/5eb8108d-ac51-4f62-a8ba-0fdd7f278728/files/332ee545-fcd2-4303-9795-f14388b8cecc.jpg';
-const P_MATS = 'https://cdn.poehali.dev/projects/5eb8108d-ac51-4f62-a8ba-0fdd7f278728/files/5197b21e-bc73-4cd9-a5d6-4b57f0833031.jpg';
-const P_FILTERS = 'https://cdn.poehali.dev/projects/5eb8108d-ac51-4f62-a8ba-0fdd7f278728/files/b69b0755-dbf2-439c-b4d5-e2549141cb65.jpg';
+const P_BRAKES = 'https://cdn.poehali.dev/projects/5eb8108d-ac51-4f62-a8ba-0fdd7f278728/files/ea20bc74-8d05-433f-b6d6-5ac295aaeb5e.jpg';
+const P_WHEEL = 'https://cdn.poehali.dev/projects/5eb8108d-ac51-4f62-a8ba-0fdd7f278728/files/e51a9d83-b7b4-45e9-b28f-1a48d7f4c033.jpg';
+const P_LIGHT = 'https://cdn.poehali.dev/projects/5eb8108d-ac51-4f62-a8ba-0fdd7f278728/files/af708f18-9e71-4093-9ac6-bee487ba6546.jpg';
+const P_MATS = 'https://cdn.poehali.dev/projects/5eb8108d-ac51-4f62-a8ba-0fdd7f278728/files/f860d139-cfda-4ffe-ad67-e27c9401ee5e.jpg';
+const P_FILTERS = 'https://cdn.poehali.dev/projects/5eb8108d-ac51-4f62-a8ba-0fdd7f278728/files/0ad68ffc-44b6-47d2-a371-19db1e1667e3.jpg';
 
 export interface Product {
   id: string;

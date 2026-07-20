@@ -134,13 +134,13 @@ const Catalog = ({ open, onClose }: CatalogProps) => {
 
         {/* Уровень: товары */}
         {products ? (
-          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 md:gap-6 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 md:gap-6 lg:grid-cols-3">
             {products.map((p) => (
               <div
                 key={p.id}
-                className="group mx-auto flex min-h-[500px] w-full max-w-[300px] flex-col overflow-hidden rounded-2xl border border-foreground/10 bg-gradient-to-b from-white/[0.04] to-transparent shadow-[0_10px_40px_-15px_rgba(0,0,0,0.8)] transition-all duration-300 hover:-translate-y-1 hover:border-accent2/40"
+                className="group mx-auto flex w-full max-w-[340px] flex-col overflow-hidden rounded-2xl border border-foreground/10 bg-gradient-to-b from-white/[0.04] to-transparent shadow-[0_10px_40px_-15px_rgba(0,0,0,0.8)] transition-all duration-300 hover:-translate-y-1 hover:border-accent2/40"
               >
-                <div className="relative aspect-[9/16] overflow-hidden bg-black/40">
+                <div className="relative aspect-[16/9] overflow-hidden bg-black/40">
                   <img
                     src={p.image}
                     alt={p.name}

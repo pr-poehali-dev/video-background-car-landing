@@ -148,7 +148,7 @@ const Catalog = ({ open, onClose }: CatalogProps) => {
                   />
                 </div>
                 <div className="flex flex-1 flex-col p-5">
-                  <h3 className="mb-3 min-h-[3rem] text-base font-medium leading-snug text-foreground/90">
+                  <h3 className="mb-3 line-clamp-3 min-h-[3.75rem] text-sm font-medium leading-snug text-foreground/90" title={p.name}>
                     {p.name}
                   </h3>
                   <div className="mt-auto">

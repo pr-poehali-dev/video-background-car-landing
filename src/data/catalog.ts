@@ -35,7 +35,7 @@ export interface Brand {
 }
 
 const sampleProducts = (prefix: string): Product[] => [
-  { id: `${prefix}-1`, name: 'Тормозные колодки передние', price: 4290, image: P_BRAKES },
+  { id: `${prefix}-1`, name: 'Комплект дисков MECHWISH передние (пара) + колодки керамика в комплекте Chery Tiggo 8 / Tiggo 8 PRO / Tiggo 8 promax (1.6) / Jaecoo 2WD - тип УХО', price: 4290, image: P_BRAKES },
   { id: `${prefix}-2`, name: 'Литой диск R18', price: 12900, image: P_WHEEL },
   { id: `${prefix}-3`, name: 'Фара LED в сборе', price: 18500, image: P_LIGHT },
   { id: `${prefix}-4`, name: 'Коврики в салон, комплект', price: 3490, image: P_MATS },

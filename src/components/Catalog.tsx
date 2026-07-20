@@ -140,19 +140,19 @@ const Catalog = ({ open, onClose }: CatalogProps) => {
                 key={p.id}
                 className="group mx-auto flex min-h-[500px] w-full max-w-[300px] flex-col overflow-hidden rounded-2xl border border-foreground/10 bg-gradient-to-b from-white/[0.04] to-transparent shadow-[0_10px_40px_-15px_rgba(0,0,0,0.8)] transition-all duration-300 hover:-translate-y-1 hover:border-accent2/40"
               >
-                <div className="relative aspect-[4/3] overflow-hidden bg-black/40">
+                <div className="relative aspect-square overflow-hidden bg-black/40">
                   <img
                     src={p.image}
                     alt={p.name}
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                 </div>
-                <div className="flex flex-1 flex-col p-5">
-                  <h3 className="mb-3 line-clamp-3 min-h-[3.75rem] text-sm font-medium leading-snug text-foreground/90" title={p.name}>
+                <div className="flex flex-1 flex-col px-4 pb-4 pt-3">
+                  <h3 className="mb-2 line-clamp-2 min-h-[2.5rem] text-sm font-medium leading-snug text-foreground/90" title={p.name}>
                     {p.name}
                   </h3>
                   <div className="mt-auto">
-                    <div className="mb-4 font-display text-2xl font-extrabold text-foreground">
+                    <div className="mb-3 font-display text-2xl font-extrabold text-foreground">
                       {p.price.toLocaleString('ru-RU')} ₽
                     </div>
                     <div className="flex gap-2">

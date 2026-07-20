@@ -134,7 +134,7 @@ const Catalog = ({ open, onClose }: CatalogProps) => {
 
         {/* Уровень: товары */}
         {products ? (
-          <div className="mx-auto grid max-w-5xl grid-cols-1 justify-items-center gap-5 sm:grid-cols-2 md:gap-6 lg:grid-cols-3">
+          <div className="mx-auto grid max-w-6xl grid-cols-1 justify-items-center gap-5 sm:grid-cols-2 md:gap-6 lg:grid-cols-4">
             {products.map((p) => (
               <div
                 key={p.id}
